@@ -6,10 +6,10 @@
   </div>
 <ngx-slick-carousel class="carousel"
 #slickModal="slick-carousel" [config]="slideConfig"  arrows = true>
-    <ng-container   *ngFor="let cur of current" >
-      <div ngxSlickItem  class="card" *ngIf='cur.genre === "Action" || cur.genre1 === "Action" || cur.genre2 === "Action"'>
-        <a [routerLink]="['/singleSearch',cur.id] ">
-      <img   [src] = 'cur.img' class= "card-img img-fluid"></a>
+    <ng-container   *ngFor="let action of action" >
+      <div ngxSlickItem  class="card">
+        <a [routerLink]="['/singleSearch',action.id] ">
+      <img   [src] = 'action.image.medium' class= "card-img img-fluid"></a>
 
       </div>
     </ng-container>
@@ -21,10 +21,10 @@
   </div>
 <ngx-slick-carousel class="carousel"
 #slickModal="slick-carousel" [config]="slideConfig"  arrows = true>
-    <ng-container   *ngFor="let cur of current" >
-      <div ngxSlickItem  class="card" *ngIf='cur.genre === "Adventure" || cur.genre1 === "Adventure" || cur.genre2 === "Adventure"'>
-        <a [routerLink]="['/singleSearch',cur.id] ">
-      <img   [src] = 'cur.img' class= "card-img img-fluid"></a>
+    <ng-container   *ngFor="let adventure of adventure" >
+      <div ngxSlickItem  class="card">
+        <a [routerLink]="['/singleSearch',adventure.id] ">
+      <img   [src] = 'adventure.image.medium' class= "card-img img-fluid"></a>
 
       </div>
     </ng-container>
@@ -36,10 +36,10 @@
   </div>
 <ngx-slick-carousel class="carousel"
 #slickModal="slick-carousel" [config]="slideConfig"  arrows = true>
-    <ng-container   *ngFor="let cur of current" >
-      <div ngxSlickItem  class="card" *ngIf='cur.genre === "Thriller" || cur.genre1 === "Thriller" || cur.genre2 === "Thriller"'>
-        <a [routerLink]="['/singleSearch',cur.id] ">
-      <img   [src] = 'cur.img' class= "card-img img-fluid"></a>
+    <ng-container   *ngFor="let thriller of thriller" >
+      <div ngxSlickItem  class="card" >
+        <a [routerLink]="['/singleSearch',thriller.id] ">
+      <img   [src] = 'thriller.image.medium' class= "card-img img-fluid"></a>
 
       </div>
     </ng-container>
@@ -52,10 +52,10 @@
  <ngx-slick-carousel class="carousel"
     #slickModal="slick-carousel" [config]="slideConfig">
 
-    <ng-container   *ngFor="let cur of current" >
-        <div ngxSlickItem class="card" *ngIf='cur.genre === "Comedy "|| cur.genre1 === "Comedy" || cur.genre2 === "Comedy"'>
-      <a [routerLink]="['/singleSearch',cur.id] ">
-      <img class= "card-img img-fluid" [src] = 'cur.img'></a>
+    <ng-container   *ngFor="let comedy of comedy" >
+        <div ngxSlickItem class="card" >
+      <a [routerLink]="['/singleSearch',comedy.id] ">
+      <img class= "card-img img-fluid" [src] = 'comedy.image.medium'></a>
       </div>
     </ng-container>
   </ngx-slick-carousel>
@@ -66,11 +66,11 @@
 
       <ngx-slick-carousel class="carousel"
       #slickModal="slick-carousel" [config]="slideConfig">
-      <ng-container   *ngFor="let cur of current" >
+      <ng-container   *ngFor="let sci of sci" >
 
-        <div ngxSlickItem class="card" *ngIf='cur.genre === "Science-Fiction"|| cur.genre1=== "Science-Fiction" || cur.genre2 === "Science-Fiction"'>
-        <a [routerLink]="['/singleSearch',cur.id] ">
-        <img class= "card-img img-fluid" [src] ='cur.img'></a>
+        <div ngxSlickItem class="card" >
+        <a [routerLink]="['/singleSearch',sci.id] ">
+        <img class= "card-img img-fluid" [src] ='sci.image.medium'></a>
         </div>
       </ng-container>
     </ngx-slick-carousel>
@@ -81,10 +81,10 @@
 
    <ngx-slick-carousel class="carousel"
     #slickModal="slick-carousel" [config]="slideConfig">
-    <ng-container   *ngFor="let cur of current" >
-      <div ngxSlickItem class="card" *ngIf='cur.genre === "Romance" || cur.genre1 === "Romance" || cur.genre2 === "Romance"'>
-      <a [routerLink]="['/singleSearch',cur.id] ">
-      <img class= "card-img img-fluid" [src] = 'cur.img'></a>
+    <ng-container   *ngFor="let romance of romance" >
+      <div ngxSlickItem class="card" >
+      <a [routerLink]="['/singleSearch',romance.id] ">
+      <img class= "card-img img-fluid" [src] = 'romance.image.medium'></a>
       </div>
     </ng-container>
   </ngx-slick-carousel>
@@ -93,15 +93,16 @@
     <p>Drama</p>
   </div>
 
- <ngx-slick-carousel class="carousel"
-  #slickModal="slick-carousel" [config]="slideConfig">
-  <ng-container   *ngFor="let cur of current" >
-    <div ngxSlickItem class="card" *ngIf='cur.genre === "Drama" || cur.genre1 === "Drama" || cur.genre2 === "Drama"'>
-    <a [routerLink]="['/singleSearch',cur.id] ">
-    <img class= "card-img img-fluid" [src] = 'cur.img'></a>
-    </div>
-  </ng-container>
-</ngx-slick-carousel>
+  <ngx-slick-carousel class="carousel"
+    #slickModal="slick-carousel" [config]="slideConfig">
+    <ng-container   *ngFor="let drama of drama" >
+      <div ngxSlickItem class="card" >
+      <a [routerLink]="['/singleSearch',drama.id] ">
+      <img class= "card-img img-fluid" [src] = 'drama.image.medium'></a>
+      </div>
+    </ng-container>
+  </ngx-slick-carousel>
+
 
 </div>
 
