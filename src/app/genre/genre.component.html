@@ -8,7 +8,7 @@
         <mat-label></mat-label>
         <h5 id="genre">Select a Genre</h5>
         <select  [(ngModel)]="selected" id="selectwidth" (ngModelChange) = 'onGenreselected($event)'>
-          <option  hidden>Genres</option>
+          <option hidden>Genres</option>
           <option *ngFor="let genre of genres" [value]="genre.value">
                 {{ genre.viewValue }}
           </option>

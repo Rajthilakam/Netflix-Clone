@@ -12,13 +12,7 @@ import { Icarousel } from '../icarousel';
 export class ShowCarouselComponentComponent implements OnInit {
   current: Icarousel[] = [];
   showdata:Ishowdata[] = []
-  action:Ishowdata[] = []
-  adventure:Ishowdata[] = []
-  thriller:Ishowdata[] = []
-  comedy:Ishowdata[] = []
-  sci:Ishowdata[] = []
-  romance:Ishowdata[] = []
-  drama:Ishowdata[] = []
+  
 
 
   constructor(private showdataservice:ShowdataService) { }
@@ -27,18 +21,11 @@ export class ShowCarouselComponentComponent implements OnInit {
 
     this.showdataservice.getshowdata().subscribe(data => {
      this.showdata = data
-     this.action = this.showdata.filter(data => data.genres.includes('Action'))
-     this.adventure = this.showdata.filter(data => data.genres.includes('Adventure'))
-     this.thriller = this.showdata.filter(data => data.genres.includes('Thriller'))
-     this.comedy = this.showdata.filter(data => data.genres.includes('Comedy'))
-     this.sci = this.showdata.filter(data => data.genres.includes('Science-Fiction'))
-     this.romance = this.showdata.filter(data => data.genres.includes('Romance'))
-     this.drama = this.showdata.filter(data => data.genres.includes('Drama'))
 
     })
   }
 
-  slideConfig = {"slidesToShow": 8, "slidesToScroll": 6, "arrows":true, "infinte": false};
+  slideConfig = {"slidesToShow": 7, "slidesToScroll": 6, "arrows":true, "infinte": false};
 
 
 
