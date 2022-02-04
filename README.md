@@ -1,4 +1,4 @@
-![genre](https://user-images.githubusercontent.com/50530648/152593156-0bd58676-c399-494d-b66b-8d7066225ad3.png)
+
 
 # NetfllixCloneApp
 
@@ -31,4 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ![netflix](https://user-images.githubusercontent.com/50530648/152591109-66cf17f5-244a-440c-9eca-a33af21e7211.png)
 ![episode](https://user-images.githubusercontent.com/50530648/152592643-99fda697-40d8-4a00-a147-38a65b979627.png)
 ![movie](https://user-images.githubusercontent.com/50530648/152592759-47c9ad43-f57d-444c-a0b3-8e3185db62cf.png)
+![genre](https://user-images.githubusercontent.com/50530648/152593245-8b2a9aa0-88b4-4db6-86cf-172a17bdd598.png)
+
 
