@@ -1,3 +1,4 @@
+![season](https://user-images.githubusercontent.com/50530648/152591227-3fde4cba-43f0-4ef0-9196-84b8a0fe7fb5.png)
 # NetfllixCloneApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
