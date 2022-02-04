@@ -1,4 +1,4 @@
-![season](https://user-images.githubusercontent.com/50530648/152591227-3fde4cba-43f0-4ef0-9196-84b8a0fe7fb5.png)
+
 # NetfllixCloneApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
@@ -28,3 +28,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ![netflix](https://user-images.githubusercontent.com/50530648/152591109-66cf17f5-244a-440c-9eca-a33af21e7211.png)
+![episode](https://user-images.githubusercontent.com/50530648/152592643-99fda697-40d8-4a00-a147-38a65b979627.png)
