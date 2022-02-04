@@ -1,3 +1,4 @@
+![genre](https://user-images.githubusercontent.com/50530648/152593156-0bd58676-c399-494d-b66b-8d7066225ad3.png)
 
 # NetfllixCloneApp
 
